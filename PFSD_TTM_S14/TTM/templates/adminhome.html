@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="lightgrey">
+    <div>
+        <h1  align="center"><font color="green">Tourism & Travel Management</font></h1>
+        <h2 align="center">Admin Home</h2>
+        <a href="{% url 'adminhome'%}"> Home </a> &nbsp;&nbsp;&nbsp;
+        <a href=""> Views User </a> &nbsp;&nbsp;&nbsp;
+        <a href="">Change Password </a> &nbsp;&nbsp;&nbsp;
+        <a href="{% url 'addpackage' %}">Add Packages</a> &nbsp;&nbsp;&nbsp;
+        <a href="{% url 'viewpackage'%}">View Packages</a> &nbsp;&nbsp;&nbsp;
+        <a href="{% url 'login' %}"> Logout</a>
+        <a herf="{% url 'mail' %}">mail</a>
+    </div>
+</body>
+{% block body %}
+{% endblock %}
+</html>
